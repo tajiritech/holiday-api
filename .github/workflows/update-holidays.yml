@@ -29,8 +29,8 @@ jobs:
       - name: コミット＆プッシュ
         if: steps.diff.outputs.no_changes == 'false'
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
+          git config user.name "tajiritech"
+          git config user.email "tajiri.teckbiz@gmail.com"
           git add json/holidays.json
           git commit -m "Update holidays.json"
           git push
